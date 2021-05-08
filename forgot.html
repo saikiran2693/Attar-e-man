@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Attar-e-Man - Forgot Password</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-auth.js"></script>
+    <script src="firebase.js"></script>
+  </head>
+  <body>
+    <div id="top-title">Attar-e-Man</div>
+    <div id="cont-forgot">
+      <div id="form-title">
+        <i class="material-icons">lock</i> Forgot Password
+      </div>
+
+      <div class="input">
+        <div class="input-addon">
+          <i class="material-icons">email</i>
+        </div>
+        <input
+          id="emailid"
+          placeholder="Email Id"
+          type="email"
+          class="validate"
+          autocomplete="off"
+          required
+        />
+      </div>
+      <div class="clearfix"></div>
+      <br />
+      <input
+        id="forgot"
+        type="submit"
+        value="Send Request"
+        onclick="forgot()"
+      />
+    </div>
+  </body>
+  <html></html>
+</html>

@@ -1,250 +1,262 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Attar-e-Man - Home</title>
-		<meta charset="utf-8" />
-		<meta name="viewpoint" content="width=device-width,initial-scal=1.0">
-		<meta http-equip="X-UA-compatible" content="ie=edge">
-		<link rel="stylesheet" href="style.css" media="screen" type="text/css" />
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-		<script type="text/javascript" src="jquery.store.js"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <head>
+    <title>Attar-e-Man - Home</title>
+    <meta charset="utf-8" />
+    <meta name="viewpoint" content="width=device-width,initial-scal=1.0" />
+    <meta http-equip="X-UA-compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" media="screen" type="text/css" />
+    <script
+      type="text/javascript"
+      src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"
+    ></script>
+    <script type="text/javascript" src="jquery.store.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-auth.js"></script>
+    <script src="firebase.js"></script>
+    <style>
+      button {
+        background: none;
+        border: none;
+        padding: 10px 10px;
+        font-family: arial, sans-serif;
+        color: powderblue;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
 
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-		<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
-		<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-auth.js"></script>
-		<script src="firebase.js"></script>
-		<style>
-			button {
-			background: none;
-			border: none;
-			padding: 10px 10px;
-			font-family: arial, sans-serif;
-			color: powderblue;
-			text-decoration: none;
-			cursor: pointer;
-			}
-		</style>
-	</head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><h1>Attar-e-Man</h1></a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="about.html" target="_blank">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Sign In</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-	<body>	
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-			<div class="container-fluid">
-			<a class="navbar-brand" href="index.html"><h1>Attar-e-Man</h1></a>
-				<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-					<ul class="navbar-nav ml-auto">
-						<li class="nav-item">
-							<a class="nav-link" href="about.html" target="_blank">About Us</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="login.html">Sign In</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-		
-	<section class="new-arrivals">
-	<div id="site">
-		<div class="container">
-			<div class="title-box">
-			<h2>For Men</h2>
-			</div>
-			<div class="row">
-				<div class="col-md-3">
-				<div class="product-top">
-					<img src="men/m1.jpg">
-				</div>
-				
-				
-				<div class="product-bottom text-center">
-				<h3><a href="greenm1.html" target="_blank">Green - Polo</a></h3>
-				<div class="product-description" data-name="polo" data-price="49">
-					<p class="product-price">&#36; 49</p>		
-				</div>
-				</div>
-				</div>
+    <section class="new-arrivals">
+      <div id="site">
+        <div class="container">
+          <div class="title-box">
+            <h2>For Men</h2>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <div class="product-top">
+                <img src="men/m1.jpg" />
+              </div>
 
-				
-				<div class="col-md-3">
-				<div class="product-top">
-					<img src="men/m2.jpg">
-				</div>
-				
-				
-				<div class="product-bottom text-center">
-				<h3><a href="goldenm2.html" target="_blank">Golden - Boss</a></h3>
-				<div class="product-description" data-name="boss" data-price="59">
-					
-					<p class="product-price">&#36; 59</p>
-							
-				</div>
-				</div>
-				</div>
+              <div class="product-bottom text-center">
+                <h3><a href="greenm1.html" target="_blank">Green - Polo</a></h3>
+                <div
+                  class="product-description"
+                  data-name="polo"
+                  data-price="49"
+                >
+                  <p class="product-price">&#36; 49</p>
+                </div>
+              </div>
+            </div>
 
+            <div class="col-md-3">
+              <div class="product-top">
+                <img src="men/m2.jpg" />
+              </div>
 
+              <div class="product-bottom text-center">
+                <h3>
+                  <a href="goldenm2.html" target="_blank">Golden - Boss</a>
+                </h3>
+                <div
+                  class="product-description"
+                  data-name="boss"
+                  data-price="59"
+                >
+                  <p class="product-price">&#36; 59</p>
+                </div>
+              </div>
+            </div>
 
-				<div class="col-md-3">
-				<div class="product-top">
-					<img src="men/m3.jpg">
-				</div>
-				
-				
-				<div class="product-bottom text-center">
-				<h3><a href="whitem3.html" target="_blank">White - Allure</a></h3>
-				<div class="product-description" data-name="allure" data-price="69">
-					
-					<p class="product-price">&#36; 69</p>
-							
-				</div>
-				</div>
-				</div>
+            <div class="col-md-3">
+              <div class="product-top">
+                <img src="men/m3.jpg" />
+              </div>
 
+              <div class="product-bottom text-center">
+                <h3>
+                  <a href="whitem3.html" target="_blank">White - Allure</a>
+                </h3>
+                <div
+                  class="product-description"
+                  data-name="allure"
+                  data-price="69"
+                >
+                  <p class="product-price">&#36; 69</p>
+                </div>
+              </div>
+            </div>
 
+            <div class="col-md-3">
+              <div class="product-top">
+                <img src="men/m4.jpg" />
+              </div>
 
-				<div class="col-md-3">
-				<div class="product-top">
-					<img src="men/m4.jpg">
-				</div>
-				
-				
-				<div class="product-bottom text-center">
-				<h3><a href="bleum4.html" target="_blank">Bleu - Chanel</a></h3>
-				<div class="product-description" data-name="chanel" data-price="79">
-					
-					<p class="product-price">&#36; 79</p>
-							
-				</div>
-				</div>
-				</div>			
+              <div class="product-bottom text-center">
+                <h3><a href="bleum4.html" target="_blank">Bleu - Chanel</a></h3>
+                <div
+                  class="product-description"
+                  data-name="chanel"
+                  data-price="79"
+                >
+                  <p class="product-price">&#36; 79</p>
+                </div>
+              </div>
+            </div>
+          </div>
 
-			</div>
+          <div class="title-box">
+            <h2>For Women</h2>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <div class="product-top">
+                <img src="women/w1.jpg" />
+              </div>
 
+              <div class="product-bottom text-center">
+                <h3>
+                  <a href="greenw1.html" target="_blank">Green - Chanel</a>
+                </h3>
+                <div
+                  class="product-description"
+                  data-name="chanel"
+                  data-price="69"
+                >
+                  <p class="product-price">&#36; 69</p>
+                </div>
+              </div>
+            </div>
 
-			<div class="title-box">
-				<h2>For Women</h2>
-				</div>
-		<div class="row">
-				<div class="col-md-3">
-				<div class="product-top">
-					<img src="women/w1.jpg">
-				</div>
-				
-				
-				<div class="product-bottom text-center">
-				<h3><a href="greenw1.html" target="_blank">Green - Chanel</a></h3>
-				<div class="product-description" data-name="chanel" data-price="69">
-					
-					<p class="product-price">&#36; 69</p>
-							
-				</div>
-				</div>
-				</div>
+            <div class="col-md-3">
+              <div class="product-top">
+                <img src="women/w2.jpg" />
+              </div>
 
-				
-				<div class="col-md-3">
-				<div class="product-top">
-					<img src="women/w2.jpg">
-				</div>
-				
-				
-				<div class="product-bottom text-center">
-				<h3><a href="purplew2.html" target="_blank">Purple - YSL</a></h3>
-				<div class="product-description" data-name="ysl" data-price="79">
-					
-					<p class="product-price">&#36; 79</p>
-							
-				</div>
-				</div>
-				</div>
+              <div class="product-bottom text-center">
+                <h3>
+                  <a href="purplew2.html" target="_blank">Purple - YSL</a>
+                </h3>
+                <div
+                  class="product-description"
+                  data-name="ysl"
+                  data-price="79"
+                >
+                  <p class="product-price">&#36; 79</p>
+                </div>
+              </div>
+            </div>
 
+            <div class="col-md-3">
+              <div class="product-top">
+                <img src="women/w3.jpg" />
+              </div>
 
-				<div class="col-md-3">
-				<div class="product-top">
-					<img src="women/w3.jpg">
-				</div>
-				
-				
-				<div class="product-bottom text-center">
-				<h3><a href="pinkw3.html" target="_blank">Pink - V&R</a></h3>
-				<div class="product-description" data-name="vr" data-price="89">
-					
-					<p class="product-price">&#36; 89</p>
-							
-				</div>
-				</div>
-				</div>
+              <div class="product-bottom text-center">
+                <h3><a href="pinkw3.html" target="_blank">Pink - V&R</a></h3>
+                <div class="product-description" data-name="vr" data-price="89">
+                  <p class="product-price">&#36; 89</p>
+                </div>
+              </div>
+            </div>
 
+            <div class="col-md-3">
+              <div class="product-top">
+                <img src="women/w4.jpg" />
+              </div>
 
+              <div class="product-bottom text-center">
+                <h3><a href="orgw4.html" target="_blank">Org - Hermes</a></h3>
+                <div
+                  class="product-description"
+                  data-name="hermes"
+                  data-price="99"
+                >
+                  <p class="product-price">&#36; 99</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-				<div class="col-md-3">
-				<div class="product-top">
-					<img src="women/w4.jpg">
-				</div>
-				
-				
-				<div class="product-bottom text-center">
-				<h3><a href="orgw4.html" target="_blank">Org - Hermes</a></h3>
-				<div class="product-description" data-name="hermes" data-price="99">
-					
-					<p class="product-price">&#36; 99</p>
-							
-				</div>
-				</div>
-				</div>	
-			</div>
+    <!------Services Section------->
+    <section id="services">
+      <div class="container">
+        <h1>Our Services</h1>
+        <div class="row services">
+          <div class="col-md-4 text-center">
+            <div class="icon">
+              <i class="fa fa-phone"></i>
+            </div>
+            <h3>24/7 Support</h3>
+            <p>on order related queries</p>
+          </div>
 
-		</div>
-	</div>
-	</section>
-			
-	<!------Services Section------->		
-		<section id="services">
-		
-			<div class="container">
-				<h1>Our Services</h1>
-				<div class="row services" >
-					<div class= "col-md-4 text-center">
-						<div class="icon">
-						<i class="fa fa-phone"></i>
-						</div>
-						<h3> 24/7 Support</h3>
-						<p>on order related queries</p>
-					</div>
-				
-					<div class="col-md-4 text-center">
-						<div class="icon">
-						<i class="fa fa-shopping-cart"></i>
-						</div>
-						<h3> Return within 30 days</h3>
-						<p>of receiving your order</p>
-					</div>
-				
-					<div class="col-md-4 text-center">
-						<div class="icon">
-						<i class="fa fa-truck"></i>
-						</div>
-						<h3>Get free delivery</h3>
-						<p>on every order</p>
-					</div>
-				</div>
-			</div>
-		
-		</section>
+          <div class="col-md-4 text-center">
+            <div class="icon">
+              <i class="fa fa-shopping-cart"></i>
+            </div>
+            <h3>Return within 30 days</h3>
+            <p>of receiving your order</p>
+          </div>
 
-		<!-- Footer -->
-		<footer class="bg-dark text-white text-lg-start">
-		
-			<!-- Copyright -->
-			<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-			© 2021 Copyright:
-			<a class="text-white" href="index.html">Attar-e-Man</a>
-			</div>
-			<!-- Copyright -->
-		</footer>
-		<!-- Footer -->
+          <div class="col-md-4 text-center">
+            <div class="icon">
+              <i class="fa fa-truck"></i>
+            </div>
+            <h3>Get free delivery</h3>
+            <p>on every order</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-	</body>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-lg-start">
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2021 Copyright:
+        <a class="text-white" href="index.html">Attar-e-Man</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  </body>
 </html>

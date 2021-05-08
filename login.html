@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Attar-e-Man - Sign In</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="main.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-auth.js"></script>
+        <script src="firebase.js"></script>
+    </head>
+
+    <body>
+        <div id="top-title">Attar-e-Man</div>
+        <div id="cont-signin">
+            <div id="form-title">
+                <i class="material-icons">account_box</i> Sign In
+            </div>
+
+                <div class="input">
+                    <div class="input-addon">
+                        <i class="material-icons">email</i>
+                    </div>
+                    <input id="email" placeholder="Email Id" type="email" required>
+                </div>
+
+                <div class="clearfix"></div>
+
+                <div class="input">
+                    <div class="input-addon">
+                        <i class="material-icons">vpn_key</i>
+                    </div>
+                    <input id="password" placeholder="Password" type="password" autocomplete="off" required>
+                </div>
+                <div class="privacy">
+                    <input type="checkbox" onclick="showPass()">Show Password<br><br>
+                </div>
+                <input id="Sin" type="submit" value="Sign In" onclick="signIn()"><br><br>
+
+            <div class="forgot-password">
+                <a href="forgot.html" >Forgot password?</a>
+            </div>
+            <div class="privacy">
+                <div class="tooltip">
+                    <a href="about.html" target="_blank"><i class="material-icons">privacy_tip</i></a>
+                    <span class="tooltiptext">About Us</span>
+                </div>
+            </div>
+
+            <div class="register">
+                Don't have an account yet?<br>
+                <a href="register.html"><button id="sign-bttn">Sign Up</button></a>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Attar-e-Man - Sign Up</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="main.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-auth.js"></script>
+        <script src="firebase.js"></script>
+    </head>
+
+    <body>
+        <div id="top-title">Attar-e-Man</div>
+        <div id="cont-signup">
+            <div id="form-title">
+                <i class="material-icons">account_box</i> Sign Up
+            </div>
+                
+                <div class="input">
+                    <div class="input-addon">
+                        <i class="material-icons">email</i>
+                    </div>
+                    <input id="email" name="emailid" placeholder="Email Id" type="email" required>
+                </div>
+
+                <div class="clearfix"></div>
+
+                <div class="input">
+                    <div class="input-addon">
+                        <i class="material-icons">vpn_key</i>
+                    </div>
+                    <input id="password" name="passwordid" placeholder="Password" type="password" autocomplete="off" required>
+                </div>
+                
+                <div class="clearfix"></div>
+                
+                <div class="privacy">
+                    <input type="checkbox" onclick="showPass()">Show Password
+                </div><br>
+                
+                <div class="clearfix"></div>
+
+                <input id="Sup" type="submit" value="Sign Up" onclick="signUp()"><br><br>
+                
+                <div class="clearfix"></div>
+            
+            <div class="privacy">
+                <div class="tooltip">
+                    <a href="about.html" target="_blank"><i class="material-icons">privacy_tip</i></a>
+                    <span class="tooltiptext">About Us</span>
+                </div>
+            </div>
+            
+            <div class="clearfix"></div>
+
+            <div class="register">
+                Already have an account?<br>
+                <a href="login.html"><button id="sign-bttn">Sign In</button></a>
+            </div>
+        </div>
+    </body>
+</html>

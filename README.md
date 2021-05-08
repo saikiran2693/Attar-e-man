@@ -1,2 +1,2 @@
 # Attar-e-man
-This is a e-commerce website for selling perfumes. 
+This is an e-commerce website for selling perfumes. 

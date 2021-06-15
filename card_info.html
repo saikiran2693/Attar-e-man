@@ -15,6 +15,8 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" type="text/css" href="card2.css" />
+    <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-database.js"></script>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -40,6 +42,7 @@
             <div class="form-group" id="card-number-field">
               <label for="cardNumber">Card Number</label>
               <input type="text" class="form-control" id="cardNumber" />
+              <button class="btn btn-default" id="validate-card">Validate Card Number</button>
             </div>
             <div class="form-group" id="expiration-date">
               <label>Expiration Date</label>
@@ -58,12 +61,12 @@
                 <option value="12">December</option>
               </select>
               <select>
-                <option value="21">2021</option>
                 <option value="22">2022</option>
                 <option value="23">2023</option>
                 <option value="24">2024</option>
                 <option value="25">2025</option>
                 <option value="26">2026</option>
+                <option value="27">2027</option>
               </select>
             </div>
             <div class="form-group" id="credit_cards">
@@ -77,13 +80,19 @@
                 class="btn btn-default"
                 id="confirm-purchase"
               >
-                Confirm
+                Pay Now
               </button>
             </div>
           </form>
         </div>
       </div>
     </div>
+    <h1 id="bigOne" hidden></h1>
+    <h1 id="bigTwo" hidden></h1>
+    <h1 id="bigThree" hidden></h1>
+    <h1 id="bigFour" hidden></h1>
+    <h1 id="bigFive" hidden></h1>
+    <h1 id="bigSix" hidden></h1>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="jquery.payform.min.js" charset="utf-8"></script>
